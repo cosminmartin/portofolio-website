@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cosmin Martin</title>
+    <meta name="description" content="Front-End Developer" />
+    <meta charset="utf-8" />
+    <meta name="robot" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="images/dev.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="position-fixed d-flex flex-column text-white bg-red">
+    <header class="page-header">
+      <nav class="d-flex justify-content-between">
+        <a href="" class="logo">Cosmin Martin</a>
+        <ul class="d-flex">
+          <li>
+            <a href="">About</a>
+          </li>
+          <li>
+            <a href="">Skills</a>
+          </li>
+          <li>
+            <a href="">Projects</a>
+          </li>
+          <!-- possibly more list items here -->
+        </ul>
+      </nav>
+    </header>
+    <h1 class="position-absolute w-100 text-center heading">
+      Front-End Developer
+    </h1>
+    <a class="position-absolute contact" href="mailto:name@test.com">Contact</a>
+    <section
+      class="position-absolute d-flex align-items-center justify-content-center text-black bg-white skills-section"
+      data-slideIn="to-top"
+    >
+      <button
+        class="position-absolute skills-close"
+        aria-label="Close Skills Section"
+      >
+        ✕
+      </button>
+      <div class="d-flex chart-wrapper">
+        <ul class="chart-levels">
+          <li>Expert</li>
+          <li>Advanced</li>
+          <li>Intermediate</li>
+          <li>Beginner</li>
+          <li>Novice</li>
+        </ul>
+        <ul
+          class="d-flex justify-content-around align-items-end flex-grow-1 text-center bg-black chart-skills"
+        >
+          <li class="position-relative bg-red" data-height="1">
+            <span class="position-absolute w-100">HTML</span>
+          </li>
+          <li class="position-relative bg-red" data-height="2">
+            <span class="position-absolute w-100">CSS</span>
+          </li>
+          <li class="position-relative bg-red" data-height="3">
+            <span class="position-absolute w-100">JavaScript</span>
+          </li>
+          <li class="position-relative bg-red" data-height="1">
+            <span class="position-absolute w-100">React</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section
+      class="position-absolute d-flex align-items-center justify-content-center text-black bg-white about-section"
+      data-slideIn="to-top"
+    >
+      <button
+        class="position-absolute about-close"
+        aria-label="Close About Section"
+      >
+        ✕
+      </button>
+      <h1>About info</h1>
+    </section>
+  </body>
+  <script src="script.js"></script>
+  <script src="game/game-script.js"></script>
+</html>
