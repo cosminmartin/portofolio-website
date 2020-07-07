@@ -23,3 +23,16 @@ skillsLink.addEventListener("click", (e) => {
 skillsClose.addEventListener("click", () => {
   document.body.classList.toggle(windowOpened);
 });
+
+const projectsLink = document.querySelector(".page-header li:nth-child(3) a");
+const projectsClose = document.querySelector(".projects-close");
+const projectsWindowOpened = "projects-window-opened";
+
+projectsLink.addEventListener("click", (e) => {
+  e.preventDefault();
+  document.body.classList.toggle(projectsWindowOpened);
+});
+
+projectsClose.addEventListener("click", () => {
+  document.body.classList.toggle(projectsWindowOpened);
+});
